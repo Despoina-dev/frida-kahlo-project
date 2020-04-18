@@ -1,0 +1,238 @@
+*{
+    text-align: left;
+}
+
+@charset "UTF-8";
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li, a {
+    list-style: none;
+    display: inline-flex;
+    padding: 8px;
+}
+
+li a:hover {
+    color: pink;
+  background-color: #111;
+}
+
+body {
+    background-image: url(Frida-kahlo.png);
+    background size: cover;
+    overscroll-behavior: contain; /* or "none" */
+
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #563b46;
+  opacity: 0.8;
+}
+
+.header h1 {
+    color: #f1c7c7;
+    text-align: center;
+  font-size: 50px;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #827676;
+  opacity: 0.8;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.div.faceimg{
+    overflow: auto;
+}
+
+h3{
+    text-align: center;
+}
+
+h2, h5{
+    color: #0a0909;
+    text-align: center;
+}
+
+
+p{
+    visibility: visible;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #000000;
+    font-family: "times new roman", Georgia;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    box-sizing: border-box;
+    position: relative;
+    border-left: none;
+    font-style: italic;
+    text-align: center;
+    clear: both;
+    margin: 17px 0;
+    padding: 15px 50px;
+}
+    
+
+
+
+.leftcolumn { 
+ 
+  float: left;
+  width: 75%;
+}
+
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: transparent;
+  padding-left: 20px;
+}
+
+
+
+.div flex-container{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+}
+
+
+
+/* Fake image */
+.fakeimg {
+    object-fit: contain;
+  background-color: transparent;
+  float: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+
+  border-style: solid;
+  border-color: black; 
+  background-color: transparent;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+div.image{
+  display: inline-flex;
+  width: 100%;
+  height: 600px;
+  background-image: url(frida1.png);
+  background-size: cover;
+  border: 1px solid black;
+
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+  }
+}
+
+.nav-item, ul{
+
+    display: inline-flex;
+    transition: all .3s ease 0s;
+   float: center;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.footer {
+    opacity: 0.8;
+    background: #4a2020;
+    color:#d4cfcf;
+    padding: 24px 0;
+    display: block;
+}
+
+.footer:after {
+    display: table;
+    clear: both;
+    content: " ";
+}
+
+.footer .copyright {
+    font-size: .8571em;
+}
+
+.gold, .gold-background, .category {
+    color: #b2a37d;
+}
+
+
+script {
+    display: none;
+
+}
+@media screen and (min-width: 992px){
+.footer .copyright {
+    float: right;
+    }
+}
